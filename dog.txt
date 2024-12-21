@@ -1,0 +1,35 @@
+import React from 'react'
+
+export default function Dog() {
+ const empData = [
+              { name: "shih Tzu",
+               image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuw80A_l-0oJDKmjSUXhtY3RU26XgsqMULDsqrWSqXgMAzwVBcW6JsHN4ISkZ9PJ_WjuM&usqp=CAU"     
+               },
+               {name:"husky",
+               image:"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQphjPgQniDbLD-wD8dk1ds_F2jyEPNe4Fzm6BG6GGrrS0tuQh5nwihp1IsGFJT0GOzRvp2T4ZZAVV2iSOJCup7CA"
+               },
+               {name:"german separd",
+               image:"https://image.petmd.com/files/styles/978x550/public/2022-10/german-shepherd.jpeg?w=1080&q=75"
+               },
+               
+            ];
+        return (
+         <div>
+         <div className="row row-cols-1 row-cols-md-2 g-4">
+           {empData.map((place) => (
+             <div className="col" key={place.name}>
+               <div className="card">
+                 <img src={place.image}  width ="200"className="card-img-top" alt={place.name} />
+                 <div className="card-body">
+                   <h1 className="card-title">{place.name}</h1>
+                 </div>
+               </div>
+            </div>
+           ))}
+           </div>
+           </div>
+           
+      );
+      }
+   
+ 
