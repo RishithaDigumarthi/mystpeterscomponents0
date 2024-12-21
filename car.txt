@@ -1,0 +1,47 @@
+import React from 'react'
+
+export default function Car() {
+ const empData = [
+              { name: "Thar",
+               year: "2010",
+               cost: "11.35 Lakh",
+               image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Mahindra_Thar_Photoshoot_At_Perupalem_Beach_%28West_Godavari_District%2CAP%2CIndia_%29_Djdavid.jpg/1200px-Mahindra_Thar_Photoshoot_At_Perupalem_Beach_%28West_Godavari_District%2CAP%2CIndia_%29_Djdavid.jpg"
+                },
+               {name:"swift",
+                year: "2013",
+                cost: " 6.49 Lakh",
+                image:"https://www.carandbike.com/_next/image?url=https%3A%2F%2Fimages.carandbike.com%2Fcar-images%2Fcolors%2Fmaruti-suzuki%2Fswift%2Fmaruti-suzuki-swift-pearl-arctic-white.png%3Fv%3D1614155158&w=640&q=75"
+               },
+               {name:"alto k10",
+                year: "2010",
+                cost: "  3.99 Lakh ",
+                image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQewWLLMyEC8QEDL3_YAbtZDU4Emh7YK1VZpQ&s" 
+               },              
+               {name:"rolls royce",
+                year: "1900s",
+                cost: "6.95 Crore  ",
+                  image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaQEdXMCYYS5qsSMZgkvptWd4YrqMYiYTFHg&s"
+              
+               },
+            ];
+        return (
+         <div>
+         <div className="row row-cols-1 row-cols-md-2 g-4">
+           {empData.map((place) => (
+             <div className="col" key={place.name}>
+               <div className="card">
+                 <img src={place.image} className="card-img-top" alt={place.name} />
+                 <div className="card-body">
+                   <h5 className="card-title">{place.name}</h5>
+                   <p className="card-text">{place.year}, {place.cost}</p>
+                 </div>
+               </div>
+            </div>
+           ))}
+           </div>
+           </div>
+           
+      );
+      }
+   
+ 
