@@ -1,0 +1,32 @@
+package demo;
+class Stu{
+	int id;
+	String name;
+	String section;
+	String college;
+	String address;
+	public Stu(int id,String name,String section,String college,String address) {
+     this.id= id;
+	this.name= name;
+	this.section= section;
+	this.college=college;
+	this.address=address;}	
+	@Override
+	public String toString() {
+		return "Stu[id=" + id + ", name=" + name + ", section =" + section + ", college="+college +",address=" + address
+				+ "]";
+	}
+}
+public class Student{
+
+	public static void main(String[] args) {
+		
+		Stu  s1 = new Stu(234,"ramu","A","St peters","Maissamaguda");
+		
+		System.out.println(s1);
+		
+		
+		
+	}
+
+}

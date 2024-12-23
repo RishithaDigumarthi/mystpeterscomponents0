@@ -1,0 +1,36 @@
+package demo;
+
+public class Employee {
+	int id;
+	String name;
+	int salary;
+	String company;
+	String address;
+	public static void main(String[] args) {
+	
+		int n;
+		float d;
+		Employee ramu ;
+		
+		n=90;
+		d=1.234f;
+		ramu = new Employee();
+		ramu.id=100;
+		ramu.name="Ramu";
+			
+	    ramu.company="IBM";
+	    ramu.salary= 35000;
+	   
+		ramu.address= "Hyd";
+		
+		System.out.println("id--->+ramu.id");
+		System.out.println("name-->+ramu.name");
+		System.out.println("company--->+ramu.company");
+		System.out.println("adress--->+ramu.address");
+		System.out.println("salary--->+ramu.salary");
+	
+		
+				
+	}
+
+	 }
