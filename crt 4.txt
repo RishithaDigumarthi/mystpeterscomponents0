@@ -1,0 +1,311 @@
+public class pattern {
+
+	public static void main(String[] args) {
+
+     for (int r=1;r<=5;r++) {
+    	 for(int c=1;c<=r;c++){
+    		 System.out.print(c+ "  ");
+    	 }
+                System.out.println();
+     } 
+
+	}
+
+}
+
+public class pattern2 {
+
+	public static void main(String[] args) {
+		
+		
+		for(int r=1;r<=5;r++) {
+			for(int c=1;c<=r;c++) {
+				System.out.print(r+ " ");
+			}
+			    System.out.println();
+		}
+
+	}
+
+}
+public class pattern2 {
+
+	public static void main(String[] args) {
+		
+		int max=40;
+		
+		for(int r=1;r<=5;r++) {
+	
+		for(int i=1;i<=max;i++) {
+			System.out.print(" ");
+			
+		}
+		
+			for(int c=1;c<=r;c++) {
+				System.out.print(r+ " ");
+			}
+			    System.out.println();
+		        max=max -1;
+		}
+	}
+
+}
+public class pattern3 {
+public static void main(String[] args) {
+				
+			for(int r=1;r>=5;r--) {
+				for(int c=1;c>=r;c--) {
+						System.out.print(c+ " ");
+					}
+					    System.out.println();
+				}
+			}
+	}
+
+
+
+public class pattern3 {
+public static void main(String[] args) {
+				/*
+				 * ****************************
+				 * *                          *
+				 * *                          *
+				 * *                          *
+				 * *                          *
+				 * *                          *
+				 * *                          *
+				 * *                          *
+				 * *                          *
+				 * *                          *
+				 * *                          *
+				 * *                          *
+				 * ****************************
+				 */
+			for(int r=1;r<=20;r++) {
+				if(r==1|| r==20) {
+				for(int c=1;c<=30;c++) {
+						System.out.print("*");
+					}
+					}
+				else {
+					for(int c=1;c<=30;c++) {
+						if(c==1|| c==30) {
+							System.out.print("*");
+						}
+						else {
+							System.out.print(" ");
+						}
+					}
+				}
+					System.out.println();
+				}
+			}
+	}
+
+
+
+ublic class pattern4{
+	
+	public static void main(String[] abc) {
+		
+		
+		
+		
+		for(int r=1;r<=4;r++){
+			if(r%2==0) {
+				
+			for(int c=1,p=0;c<=r;c++) {
+					System.out.print(p+ "  ");
+					if(p==1) p=0;
+					else p=1;
+			    }			
+			}	
+			else {
+				
+				for(int c=1,p=1;c<=r;c++) {
+					System.out.print(p+ "  ");
+					if(p==1) p=0;
+					else p=1;
+			}
+					
+				}
+			System.out.println();
+			}
+		}
+
+public class pattern4 {
+	static void design(int r,int p) {
+		int res=p;
+		for(int c=1;c<=r;c++) {
+			System.out.println(res+" ");
+			res=res>0?0:1;
+		}
+	}
+	
+		
+		public static void main(String[] abc) {
+			
+			
+			
+			
+			for(int r=1;r<=4;r++){
+				if(r%2==0) {
+					
+				for(int c=1,p=0;c<=r;c++) {
+						System.out.print(p+ "  ");
+						if(p==1) p=0;
+						else p=1;
+				    }			
+				}	
+				else {
+					
+					for(int c=1,p=1;c<=r;c++) {
+						System.out.print(p+ "  ");
+						if(p==1) p=0;
+						else p=1;
+				}
+						
+					}
+				System.out.println();
+				}
+			}
+
+
+
+}
+public class pattern5 {
+
+	public static void main(String[] args) {
+		int mc=4,sp=20;
+		for(int t=1,i=1;t<=4;t++,i++) {
+			for(int k=1;k<=sp;k++) {
+				System.out.print(" ");
+				
+			}
+			for(int c=i;c<=mc;c++) {
+				System.out.print(c+"   ");	
+			}
+			System.out.println();
+			     sp =sp+2;
+		}
+		sp=sp-4;
+		for(int r=1,v=3;r<=3;r++) {
+			for(int k=1;k<=sp;k++) {
+				System.out.print(" ");
+			}
+			for(int c=v;c<=4;c++) {
+				System.out.print(c+"   ");
+			}
+			System.out.println();
+				v--;
+				sp=sp-2;
+			
+		}
+		
+
+}
+}
+package string;
+
+import java.util.Scanner;
+
+public class demo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter 2 names");
+		String name1 = sc.next();
+ 		String name2 = sc.next();
+ 		System.out.println("before swaping");
+		System.out.println("name1--->"+name1);
+		System.out.println("name2-->"+name2);
+		name1=name1+name2;
+		name2=name1.substring(0,name1.length()-name2.length());
+		name1=name1.substring(name2.length());
+		System.out.println(name2);
+		System.out.println("after swaping");
+		System.out.println("name1--->"+name1);
+		System.out.println("name2-->"+name2);
+	}
+
+}
+public class demo2 {
+
+	public static void main(String[] args) {
+		String str =" welcome to java world.do no laugh";
+		System.out.println(str.length());
+	for(int i=0;i<str.length();i++) {
+		char ch = str.charAt(i);
+		System.out.print(ch);
+	
+	}
+
+	}
+
+}
+public class uppercaSE {
+
+	public static void main(String[] args) {
+		String name="ramu";
+		char ch=name.charAt(0);
+		int diff=(int)('d'-'D');
+		diff=diff<0?-1*diff:diff;
+		if(ch>='a'&&ch<='z') {
+			ch=(char)(ch-diff);
+		
+		System.out.println(ch);
+		String resStr="";
+		for(int i=0;i<name.length();i++) {
+			ch =name.charAt(i);
+			if(ch>='a'&&ch<='z') {
+				ch=(char)(ch-diff);
+				}
+			resStr=resStr+ch;
+			
+			}
+		System.out.println("res--->"+resStr);
+			
+		}
+
+	}
+                                                                                                                                   
+rAmU
+	if upper lower
+	if lower upper
+
+
+	rAmU
+	if upper lower
+	if lower upper
+
+	
+}
+public class next {
+
+	
+			public static void main(String[] args) {
+				Scanner sc = new Scanner(System.in);
+				System.out.println("enter name");
+				String name=sc.next();
+			
+			char ch;
+			int diff=(int)('d'-'D');
+				diff=diff<0?-1*diff:diff;
+				String resStr="";
+				for(int i=0;i<name.length();i++) {
+					ch =name.charAt(i);
+					if(ch>='a'&&ch<='z') {
+						ch=(char)(ch-diff);
+						}
+					resStr=resStr+ch;
+					System.out.println("res---->"+resStr);
+				
+				}
+
+			}
+
+		}
+
+		
+
+

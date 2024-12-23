@@ -1,0 +1,248 @@
+package rishi;
+
+import java.util.Scanner;
+
+public class demo {
+
+	public static void main(String[] args) {
+		//for given no 5568923.....replace if no is 9 by 3
+		int n=568923,r,i=0,p=1,res=0;
+		Scanner sc = new Scanner(System.in);
+		while(n!=0) {
+		r=n%10;//
+		if (r==9) r=3;
+		n=n/10;
+		res= res+r*p;
+		p=p*10;
+		//if(n==0) break;
+		}
+        System.out.println(res);
+	}
+
+}
+package rishi;
+
+import java.util.Scanner;
+
+public class demo {
+
+	public static void main(String[] args) {
+		//for given no 5568923.....replace if no is 9 by 3
+		int r,p=1,res=0;
+		Scanner abc = new Scanner(System.in);
+		System.out.println("enter number");
+		int n = abc.nextInt();
+		while(n!=0) {
+		r=n%10;//
+		if (r==9) r=3;
+		n=n/10;
+		res= res+r*p;
+		p=p*10;
+		//if(n==0) break;
+		}
+        System.out.println(res);
+	}
+
+}
+package rishi;
+
+import java.util.Scanner;
+
+public class audio {
+
+	public static void main(String[] args) {
+	
+	Scanner sc = new Scanner(System.in);
+	int n,l,index=0,p=1,res=0,c=0;
+	System.out.println("enter no");
+	n = sc.nextInt();
+		while(n!=0) {
+		l=n%10;
+		n=n/10;
+		index++;
+		l=l+c;
+		if(index==2) {
+			
+			l=l+7;
+		}
+		if(l>=10) {
+			l=l%10;
+			c=l/10;
+		}
+		res=res+l*p;
+		p=p*10;
+		}
+		System.out.println("c--->"+c);
+		if(c>2) {
+			res = c*p+res;
+		}
+		
+		
+		
+		System.out.println(res);
+	}
+	
+
+	}
+package rishi;
+
+public class singleloop {
+     
+	public static void main(String[] args) {
+		
+		for(int i=1;i<=10;i++) {
+			
+			if(i<=2) {
+				System.out.println("hello");
+			}else if(i<=5) {
+		System.out.println("welcome");	
+		}else {
+		System.out.println("hyd");
+		}
+		
+		}
+		}
+	}
+
+	
+public class singleloop {
+     
+	public static void main(String[] args) {
+		
+		for(int i=1,hIndex=1,k=1;i<=5;i++,hIndex++,k++) {
+			
+			if(k<=2) System.out.println("hello");
+		 if(hIndex<=5)System.out.println("welcome");	
+		System.out.println("hyd");
+		}
+		
+		}
+		}
+	package rishi;
+
+import java.util.Scanner;
+
+public class prime {
+	public static boolean isprime(int n) {
+		int i=2;
+		for(;i<n/2 && (n%i!=0);i++);
+		if((n/2)==i) return true;
+		else return false;
+	}
+
+	public static void main(String[] args) {
+		Scanner  sc = new Scanner(System.in);
+		System.out.println("enter no");
+		int n = sc.nextInt();
+		if(isprime(n) ==true)System.out.println("prime");
+		else System.out.println("not primt");
+	}
+
+}package rishitha;
+
+public class demo {
+
+	
+		static void design() {
+		System.out.println("********************");
+		System.out.println(">>>>>>>>>>>>>>>>>>>>");
+		System.out.println(".....................");
+		}
+		public static void main(String[] args) {	
+	design();
+	System.out.println("hello");
+	design();
+	System.out.println("welcome");
+	design();	
+	System.out.println("java");
+	design();
+	System.out.println("st peters college");
+	design();
+	System.out.println("3rd year");
+	design();
+	System.out.println("full stack dev...");
+
+
+	}
+
+}
+public class demo2 {
+	
+	static float convertcurrency(String country) {
+		
+		float res=0;
+		
+		if(country.contentEquals("USA")) {
+		res= 83.45f;}
+		else if(country.contentEquals("uk")) {
+		res=120.45f;
+		}
+		return res;
+	}
+	
+
+	public static void main(String[] args) {
+		
+		int dollar=100;
+		float rupees;
+		rupees=convertcurrency("USA")*dollar;
+		System.out.println("USA to india"+rupees);
+		rupees=convertcurrency("uk")*dollar;
+		System.out.println("uk to india"+rupees);
+	}
+
+}
+public class demo2 {
+	
+	static float convertcurrency(String country) {
+		
+		float res=0;
+		
+		if(country.contentEquals("USA")) {
+		res= 83.45f;}
+		else if(country.contentEquals("uk")) {
+		res=120.45f;
+		}
+		return res;
+	}
+	
+
+	public static void main(String[] args) {
+		
+		int dollar=100;
+		float rupees;
+		rupees=convertcurrency("USA")*dollar;
+		System.out.println("USA to india"+rupees);
+		rupees=convertcurrency("uk")*dollar;
+		System.out.println("uk to india"+rupees);
+	}
+
+}
+public class demo2 {
+	
+	static float convertcurrency(String country) {
+		
+		float res=0;
+		
+		if(country.contentEquals("USA")) {
+		res= 83.45f;}
+		else if(country.contentEquals("uk")) {
+		res=120.45f;
+		}
+		return res;
+	}
+	
+
+	public static void main(String[] args) {
+		
+		int dollar=100;
+		float rupees;
+		rupees=convertcurrency("USA")*dollar;
+		System.out.println("USA to india"+rupees);
+		rupees=convertcurrency("uk")*dollar;
+		System.out.println("uk to india"+rupees);
+	}
+
+}
+
+
