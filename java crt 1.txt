@@ -1,0 +1,23 @@
+package demo;
+
+public class demo {
+	
+	public static void main(String[] args) {
+		
+		    //byte short int long
+		//float double
+		//char
+		//string
+		
+		float num = 1.234f;
+		
+		char ch  = 'a';//97 -65----32
+		ch =(char)(ch+32);
+				//65
+		System.out.println((int)ch);
+		
+		  
+		  
+		  
+		  
+		

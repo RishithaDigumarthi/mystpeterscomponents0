@@ -1,0 +1,39 @@
+
+public class demo {
+	
+	public static void main(String[]args) {
+		
+		 int a=100,b=300,c=23,max,min;
+		 
+		 if((a>b)&&(a>c)) {
+			 max=a;
+		 }
+		 else if(b>c) {
+			 max=b;
+		 }
+		 else {
+			 max=c;
+		 }
+		 if((a>b)&&(a>c)) {
+			 min=a;
+		 }
+		 else if(b>c) {
+			 min=b;
+		 }
+		 else {
+			 min=c;
+		 }
+		 System.out.println("max--->"+max);
+		 System.out.println("min--->"+min);
+		 
+		 }
+		  
+		
+		
+		
+		
+	}
+	
+	
+
+}
